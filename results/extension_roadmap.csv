@@ -1,0 +1,4 @@
+stage,status,proposed_state_variables,required_verification_gates
+M1,not_implemented,none,independent L/R/T tension and compression calibration; convexity check for tension-compression-asymmetric surface; cyclic reversal and finite-difference tangent tests
+M2,not_implemented,densification_history,transverse compression-unloading experiments; non-negative dissipation for evolving stiffness; state transfer across insertion and withdrawal analyses
+M3,not_implemented,damage_L; damage_R; damage_T; damage_shear,objective regularization or fracture-energy calibration; mesh sensitivity study; independent crack-location or full-field validation

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#9A6A31">
+  <meta name="description" content="A material-point solver implementing orthotropic elasticity and Hill plasticity with return mapping, consistent tangent, and physics tests.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="木材用Hill型異方性材料点ソルバー / Hill-Type Orthotropic Material-Point Solver for Wood">
+  <meta property="og:description" content="A material-point solver implementing orthotropic elasticity and Hill plasticity with return mapping, consistent tangent, and physics tests.">
+  <meta property="og:url" content="https://kelly-wk.github.io/wood-hill-material-point/">
+  <meta property="og:image" content="https://kelly-wk.github.io/wood-hill-material-point/social-preview.svg">
+  <title>木材用Hill型異方性材料点ソルバー / Hill-Type Orthotropic Material-Point Solver for Wood</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="tier-public_code" style="--accent:#9A6A31;--accent-dark:#252A32;--accent-soft:#F3ECE1;--hero-start:#252A32">
+  <a class="skip-link" href="#content">本文へ / Skip to content</a>
+  <header class="project-hero">
+    <div class="hero-inner">
+      <div class="hero-topline">
+        <div class="eyebrow">
+          <span>計算工学・建築テック / Computational Engineering &amp; Built Environment</span>
+        </div>
+        <p class="tier-badge"><span lang="ja">公開コード</span><span lang="en">Public code</span></p>
+      </div>
+      <h1><span lang="ja">木材用Hill型異方性材料点ソルバー</span><span lang="en">Hill-Type Orthotropic Material-Point Solver for Wood</span></h1>
+      <div class="hero-summary">
+        <div class="copy-pair lede"><p lang="ja">直交異方弾性とHill型塑性を、戻り写像・整合接線・物理テストまで実装した材料点ソルバー。</p><p class="translation" lang="en">A material-point solver implementing orthotropic elasticity and Hill plasticity with return mapping, consistent tangent, and physics tests.</p></div>
+        <div class="hero-facts">
+          <dl class="project-meta">
+            <div><dt>状態 / Status</dt><dd><span lang="ja">M0プロトタイプ検証済み</span><span lang="en">Validated M0 prototype</span></dd></div>
+            <div><dt>言語 / Language</dt><dd>Python</dd></div>
+          </dl>
+        </div>
+      </div>
+      <div class="method-block">
+        <p class="method-label">技術スタック / Tech Stack</p>
+        <ul class="method-list" aria-label="Methods"><li>Python</li><li>NumPy</li><li>Orthotropic elasticity</li><li>Hill plasticity</li><li>Backward Euler and Newton iteration</li><li>Consistent tangent</li><li>Finite-difference, rotation, and dissipation tests</li></ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="content" class="shell">
+    <section class="evidence-figure" aria-labelledby="figure-title">
+      <div class="section-heading"><p>00</p><h2 id="figure-title">代表的な成果図 <span lang="en">Selected Result Figure</span></h2></div>
+      <figure>
+        <img src="assets/hero.svg" alt="木材用Hill型異方性材料点ソルバーの代表的な成果図 / Selected result figure for Hill-Type Orthotropic Material-Point Solver for Wood">
+        <figcaption><span lang="ja">公開可能な検証結果から選んだ図です。</span> <span lang="en">Selected from the validation evidence cleared for publication.</span></figcaption>
+      </figure>
+    </section>
+    <section aria-labelledby="highlights-title">
+      <div class="section-heading"><p>01</p><h2 id="highlights-title">主なポイント <span lang="en">Highlights</span></h2></div>
+      <div class="highlight-grid"><article class="highlight">
+          <span class="highlight-number" aria-hidden="true">1</span>
+          <div class="copy-pair"><p lang="ja">発明的なパラメータカードで、実材料データに依存しない安全な再現例を提供。</p><p class="translation" lang="en">Uses an invented parameter card to provide a safe reproducible example independent of real material data.</p></div>
+        </article><article class="highlight">
+          <span class="highlight-number" aria-hidden="true">2</span>
+          <div class="copy-pair"><p lang="ja">解析的一貫接線を有限差分と照合し、回転共変性も独立に検証。</p><p class="translation" lang="en">Checks the analytic consistent tangent against finite differences and independently verifies rotation covariance.</p></div>
+        </article><article class="highlight">
+          <span class="highlight-number" aria-hidden="true">3</span>
+          <div class="copy-pair"><p lang="ja">降伏残差、散逸、決定論的負荷経路、刻み収束を含む物理ベースの検証を実装。</p><p class="translation" lang="en">Implements physics-based checks for yield residual, dissipation, deterministic paths, and step convergence.</p></div>
+        </article></div>
+    </section>
+
+    <section aria-labelledby="flow-title">
+      <div class="section-heading"><p>02</p><h2 id="flow-title">研究の流れ <span lang="en">Research Flow</span></h2></div>
+      <ol class="flow-grid"><li class="flow-card" data-step="1">
+              <h3><span lang="ja">課題</span><span lang="en">Problem</span></h3>
+              <div class="copy-pair"><p lang="ja">木材向け異方性弾塑性更新を、数値精度と物理整合性の両面から検証する。</p><p class="translation" lang="en">Validate an anisotropic elastoplastic update for wood in both numerical accuracy and physical consistency.</p></div>
+            </li><li class="flow-card" data-step="2">
+              <h3><span lang="ja">方法</span><span lang="en">Method</span></h3>
+              <div class="copy-pair"><p lang="ja">直交異方弾性とHill降伏面を後退Euler・Newton法で積分し、一貫接線を導出する。</p><p class="translation" lang="en">Integrate orthotropic elasticity and a Hill yield surface with backward Euler/Newton and derive a consistent tangent.</p></div>
+            </li><li class="flow-card" data-step="3">
+              <h3><span lang="ja">検証</span><span lang="en">Validation</span></h3>
+              <div class="copy-pair"><p lang="ja">有限差分接線、座標回転、塑性散逸、時間刻み収束、決定論的回帰テストを行う。</p><p class="translation" lang="en">Test finite-difference tangents, coordinate rotations, plastic dissipation, time-step convergence, and deterministic regression.</p></div>
+            </li><li class="flow-card" data-step="4">
+              <h3><span lang="ja">成果</span><span lang="en">Outcome</span></h3>
+              <div class="copy-pair"><p lang="ja">最大降伏残差1.46e-10、接線相対誤差3.93e-10、刻み収束次数1.04を確認。</p><p class="translation" lang="en">Achieved maximum yield residual 1.46e-10, tangent relative error 3.93e-10, and step-convergence order 1.04.</p></div>
+            </li></ol>
+    </section>
+
+    <section class="limitations" aria-labelledby="limits-title">
+      <div class="section-heading"><p>03</p><h2 id="limits-title">限界と適用範囲 <span lang="en">Limitations &amp; Scope</span></h2></div>
+      <ul><li><div class="copy-pair"><p lang="ja">M0材料点のみで、引張圧縮非対称、損傷、有限要素組込み、構造安全性は対象外。</p><p class="translation" lang="en">This M0 material-point model excludes tension-compression asymmetry, damage, finite-element integration, and structural safety.</p></div></li></ul>
+    </section>
+
+    <section class="publication" aria-labelledby="publication-title">
+      <div class="section-heading"><p>04</p><h2 id="publication-title">公開範囲 <span lang="en">Publication Boundary</span></h2></div>
+      <div class="publication-panel">
+        <p class="tier-badge"><span lang="ja">公開コード</span><span lang="en">Public code</span></p>
+        <div class="copy-pair"><p lang="ja">架空パラメータ、完全な数値検証、テストを備えた独立公開リポジトリとして安全に公開可能。</p><p class="translation" lang="en">Invented parameters, complete numerical validation, and tests make this safe as a standalone public repository.</p></div>
+      </div>
+      <div class="cta-grid"><a class="cta" href="https://github.com/kelly-wk/wood-hill-material-point"><strong lang="ja">リポジトリ</strong><span lang="en">Repository</span><span aria-hidden="true">↗</span></a><a class="cta" href="https://github.com/kelly-wk/wood-hill-material-point/blob/main/REPORT.md"><strong lang="ja">レポート</strong><span lang="en">Report</span><span aria-hidden="true">↗</span></a><a class="cta" href="https://github.com/kelly-wk/wood-hill-material-point#reproduce"><strong lang="ja">再現手順</strong><span lang="en">Reproduce</span><span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+
+  <footer>
+    <p><span lang="ja">公開レベルはページ上で常に明示されます。</span> <span lang="en">Publication tier is always shown explicitly.</span></p>
+    <p>kelly-wk · wood-hill-material-point</p>
+  </footer>
+</body>
+</html>

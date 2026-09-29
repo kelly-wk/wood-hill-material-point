@@ -1,0 +1,14 @@
+check,value,acceptance
+compliance_min_eigenvalue,8.126898667059854e-05,diagnostic
+stiffness_min_eigenvalue,55.0,diagnostic
+stiffness_condition_number,223.72394349536034,diagnostic
+stiffness_symmetry_error,5.684341886080802e-14,diagnostic
+max_reciprocity_error,5.421010862427522e-20,diagnostic
+hill_directional_calibration_error_L_MPa,1.4210854715202004e-14,abs <= 1e-10
+hill_directional_calibration_error_R_MPa,0.0,abs <= 1e-10
+hill_directional_calibration_error_T_MPa,0.0,abs <= 1e-10
+hill_directional_calibration_error_RT_MPa,0.0,abs <= 1e-10
+hill_directional_calibration_error_TL_MPa,0.0,abs <= 1e-10
+hill_directional_calibration_error_LR_MPa,0.0,abs <= 1e-10
+hill_matrix_min_eigenvalue,-4.440892098500626e-16,>= -1e-10 (positive semidefinite)
+hydrostatic_equivalent_stress_MPa,0.0,abs <= 1e-10 (pressure insensitive)

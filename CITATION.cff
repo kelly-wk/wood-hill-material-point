@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this numerical prototype, please cite this repository and the primary method sources listed in provenance/SOURCE_AUDIT.md."
+title: "Hill-Type Orthotropic Material-Point Solver for Wood"
+type: software
+authors:
+  - name: "kelly-wk"
+repository-code: "https://github.com/kelly-wk/wood-hill-material-point"
+version: 0.1.0
+date-released: 2026-09-29
+license: MIT

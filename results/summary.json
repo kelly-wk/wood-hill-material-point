@@ -1,0 +1,63 @@
+{
+  "project_status": "validated-prototype",
+  "implemented_scope": "M0 material point only",
+  "not_implemented": [
+    "M1",
+    "M2",
+    "M3",
+    "finite_element_model",
+    "Marc_or_HYPELA2_subroutine",
+    "contact",
+    "damage",
+    "densification",
+    "engineering_design_validation"
+  ],
+  "parameter_status": "custom_algorithm_demonstration_not_calibrated",
+  "voigt_convention": {
+    "order": [
+      "LL",
+      "RR",
+      "TT",
+      "RT",
+      "TL",
+      "LR"
+    ],
+    "stress_shear": "physical",
+    "strain_shear": "engineering",
+    "work_pair": "sigma_vector dot epsilon_vector"
+  },
+  "solver": {
+    "return_mapping": "fully implicit backward Euler with safeguarded Newton",
+    "tangent": "Jacobian-consistent algorithmic tangent, independently central-difference verified",
+    "max_abs_plastic_yield_residual_MPa": 1.460165321987006e-10,
+    "max_scaled_newton_residual": 3.650413304967515e-12,
+    "max_return_iterations": 3,
+    "max_fd_tangent_relative_error": 3.924997177620516e-10
+  },
+  "elasticity": {
+    "compliance_min_eigenvalue": 8.126898667059854e-05,
+    "stiffness_min_eigenvalue": 55.0,
+    "stiffness_condition_number": 223.72394349536034,
+    "stiffness_symmetry_error": 5.684341886080802e-14,
+    "max_reciprocity_error": 5.421010862427522e-20
+  },
+  "rotation": {
+    "angle_degrees": 37.0,
+    "material_state_stress_covariance_error_MPa": 7.105427357601002e-15,
+    "global_stress_transform_error_MPa": 7.105427357601002e-15,
+    "work_conjugacy_error_MPa": 1.1102230246251565e-16,
+    "global_tangent_relative_fd_error": 3.924997177620516e-10
+  },
+  "paths": {
+    "maximum_lateral_stress_norm_MPa": 6.929937307768433e-11,
+    "minimum_plastic_dissipation_increment_MPa": 0.0,
+    "cycle_unload_kappa_change": 0.0,
+    "nonproportional_step_convergence_order": 1.0428042845509058,
+    "step_10_to_640_stress_error_reduction": 83.90999674126988
+  },
+  "claim_boundary": [
+    "Algorithm verification is not material calibration.",
+    "Hill M0 is pressure-insensitive and symmetric in tension/compression.",
+    "No Xu embedment FE, Marc/HYPELA2, contact, densification, damage, or safety claim is reproduced."
+  ]
+}

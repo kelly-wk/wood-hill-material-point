@@ -1,0 +1,36 @@
+{
+  "name": "illustrative_orthotropic_wood_like_M0",
+  "parameter_status": "custom_algorithm_demonstration_not_calibrated",
+  "units": {
+    "stress_and_modulus": "MPa",
+    "strain": "dimensionless",
+    "angle": "radian unless explicitly labelled degrees"
+  },
+  "orthotropic_elasticity_MPa": {
+    "E_L": 12000.0,
+    "E_R": 900.0,
+    "E_T": 600.0,
+    "nu_LR": 0.35,
+    "nu_LT": 0.40,
+    "nu_RT": 0.30,
+    "G_RT": 55.0,
+    "G_TL": 650.0,
+    "G_LR": 750.0
+  },
+  "hill_initial_yield_MPa": {
+    "X_L": 40.0,
+    "Y_R": 6.0,
+    "Z_T": 6.0,
+    "S_RT": 3.0,
+    "S_TL": 4.0,
+    "S_LR": 4.5,
+    "reference_stress": 40.0
+  },
+  "linear_isotropic_hardening_MPa": 2500.0,
+  "solver_controls": {
+    "relative_tolerance": 1e-11,
+    "max_iterations": 40
+  },
+  "disclaimer": "Values are invented for deterministic algorithm verification. They are not a species, grade, moisture-state, design, or Xu et al. calibration."
+}
+

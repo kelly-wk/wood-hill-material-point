@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="540" viewBox="0 0 820 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="410" y="30" text-anchor="middle" font-family="sans-serif" font-size="19">Non-proportional path convergence (observed order 1.04)</text>
+<rect x="92" y="58" width="700" height="404" fill="none" stroke="#333"/>
+<line x1="92.00" y1="58" x2="92.00" y2="462" stroke="#e6e6e6"/>
+<line x1="92" y1="462.00" x2="792" y2="462.00" stroke="#e6e6e6"/>
+<text x="92.00" y="485" text-anchor="middle" font-family="sans-serif" font-size="12">0.00132</text>
+<text x="82" y="466.00" text-anchor="end" font-family="sans-serif" font-size="12">0.00216</text>
+<line x1="232.00" y1="58" x2="232.00" y2="462" stroke="#e6e6e6"/>
+<line x1="92" y1="381.20" x2="792" y2="381.20" stroke="#e6e6e6"/>
+<text x="232.00" y="485" text-anchor="middle" font-family="sans-serif" font-size="12">0.00325</text>
+<text x="82" y="385.20" text-anchor="end" font-family="sans-serif" font-size="12">0.00603</text>
+<line x1="372.00" y1="58" x2="372.00" y2="462" stroke="#e6e6e6"/>
+<line x1="92" y1="300.40" x2="792" y2="300.40" stroke="#e6e6e6"/>
+<text x="372.00" y="485" text-anchor="middle" font-family="sans-serif" font-size="12">0.00798</text>
+<text x="82" y="304.40" text-anchor="end" font-family="sans-serif" font-size="12">0.0168</text>
+<line x1="512.00" y1="58" x2="512.00" y2="462" stroke="#e6e6e6"/>
+<line x1="92" y1="219.60" x2="792" y2="219.60" stroke="#e6e6e6"/>
+<text x="512.00" y="485" text-anchor="middle" font-family="sans-serif" font-size="12">0.0196</text>
+<text x="82" y="223.60" text-anchor="end" font-family="sans-serif" font-size="12">0.0471</text>
+<line x1="652.00" y1="58" x2="652.00" y2="462" stroke="#e6e6e6"/>
+<line x1="92" y1="138.80" x2="792" y2="138.80" stroke="#e6e6e6"/>
+<text x="652.00" y="485" text-anchor="middle" font-family="sans-serif" font-size="12">0.0481</text>
+<text x="82" y="142.80" text-anchor="end" font-family="sans-serif" font-size="12">0.132</text>
+<line x1="792.00" y1="58" x2="792.00" y2="462" stroke="#e6e6e6"/>
+<line x1="92" y1="58.00" x2="792" y2="58.00" stroke="#e6e6e6"/>
+<text x="792.00" y="485" text-anchor="middle" font-family="sans-serif" font-size="12">0.118</text>
+<text x="82" y="62.00" text-anchor="end" font-family="sans-serif" font-size="12">0.368</text>
+<polyline points="766.07,85.86 658.05,139.68 550.02,195.03 442.00,250.56 333.98,307.58 225.95,367.56 117.93,434.14" fill="none" stroke="#2166ac" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="442.0" y="516" text-anchor="middle" font-family="sans-serif" font-size="15">Normalized step size</text>
+<text x="23" y="260.0" text-anchor="middle" font-family="sans-serif" font-size="15" transform="rotate(-90 23 260.0)">Endpoint stress error (MPa)</text>
+<line x1="106" y1="78" x2="131" y2="78" stroke="#2166ac" stroke-width="3"/>
+<text x="140" y="82" font-family="sans-serif" font-size="13">Stress endpoint error</text>
+</svg>
